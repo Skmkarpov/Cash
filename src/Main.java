@@ -1,14 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        int CustomerAccount = 100; //счёт клиента
-        int RepAmount = 500; //сумма пополнения
+        int customerAccount = 100; //счёт клиента
+        int repAmount = 500; //сумма пополнения
         int bonus; // бонус
-        if (RepAmount > 1000) { bonus = RepAmount/100;
-        } else { bonus = 0;
+        if (repAmount > 1000) {
+            bonus = repAmount / 100;
+        } else {
+            bonus = 0;
         }
-        int FinalScore = CustomerAccount+RepAmount+bonus;
-        int BonusMiles = FinalScore-(CustomerAccount+RepAmount);
-        System.out.println("Итоговый счёт = " + FinalScore);
-        System.out.println("Бонусные мили = " + BonusMiles);
+        int finalScore = customerAccount + repAmount + bonus;
+        int bonusMiles = finalScore - (customerAccount + repAmount);
+        System.out.println("Итоговый счёт = " + finalScore);
+        System.out.println("Бонусные мили = " + bonusMiles);
     }
 }
